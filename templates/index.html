@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Eupheme SampleApp</title>
+	</head>
+	<body>
+		<form action="/" method="post">
+			Name: <input type="text" name="name"><br />
+			<input type="submit">
+		</form>
+		{% if name %}
+			Name supplied was {{ name }}
+		{% endif %}
+	</body>
+</html>
