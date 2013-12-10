@@ -14,6 +14,7 @@ class IndexPage:
 
     """
 
+    # Allowed methods on this resource
     allowed_methods = {'GET', 'POST'}
 
     @faucets.produces('text/html', 'application/json')
@@ -27,7 +28,6 @@ class IndexPage:
 
         """
         return {'name': name}
-
 
     @faucets.produces('text/html', 'application/json')
     @faucets.consumes('application/x-www-form-urlencoded')
