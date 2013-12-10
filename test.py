@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+""" Sample Application for Eupheme. """
 
 import wsgiref.simple_server
 import eupheme.faucets as faucets
