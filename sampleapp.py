@@ -44,10 +44,10 @@ class IndexPage:
         # The data returned by this method will be handled by an outgoing
         # faucet, take care to return it to the template engine (Jinja2) the
         # way you want it to be presented.
-        if 'name' in data:
+        if data is not None and 'name' in data:
             return {'name': data['name'][0]}
         else:
-            return ''
+            return {}
 
 
 # Create the application and load the config
